@@ -7,8 +7,8 @@ MARKER_SIZE = 400  # pixels
 
 for id in range(20):
 
-    marker_image = aruco.drawMarker(marker_dict, id, MARKER_SIZE)
-    # cv.imshow("img", marker_image)
+    marker_image = aruco.generateImageMarker(marker_dict, id, MARKER_SIZE)
+    cv.imshow("img", marker_image)
     cv.imwrite(f"markers/markder_{id}.png", marker_image)
     # cv.waitKey(0)
     # break
