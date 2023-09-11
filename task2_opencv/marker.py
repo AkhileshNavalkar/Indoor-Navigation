@@ -1,7 +1,7 @@
 import cv2 as cv
 from cv2 import aruco
 
-marker_dict = aruco.Dictionary_get(aruco.DICT_4X4_250)
+marker_dict = aruco.getPredefinedDictionary(aruco.DICT_4X4_50)
 
 MARKER_SIZE = 400  # pixels
 
